@@ -1,7 +1,19 @@
 import java.util.Scanner;
 import java.lang.Math;
-
+/*
+ * Exercício 2 - Calculadora de IMC (Índice de Massa Corporal).
+ * 
+ * O programa solicita ao usuário seu peso e altura, calcula o IMC,
+ * e informa a categoria correspondente (ex: normal, sobrepeso, obesidade, etc.).
+ * 
+ * @author Iasmin
+ */
 public class SecondExercise {
+    /*
+     * Método principal que lê peso e altura do usuário, calcula o IMC (Versão padronizada dos EUA)
+     * e exibe a categoria de acordo com o valor obtido.
+     *
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

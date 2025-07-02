@@ -1,5 +1,13 @@
 import java.util.Scanner;
-
+/*
+ * Exercício 3 - Impressão de números pares ou ímpares.
+ * 
+ * O programa solicita dois números inteiros (primeiro menor, segundo maior)
+ * e uma opção (par ou ímpar). Em seguida, imprime todos os números
+ * entre os dois valores na ordem decrescente, conforme a opção escolhida.
+ * 
+ * @author Iasmin
+ */
 public class ThirdExercise {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -16,6 +24,7 @@ public class ThirdExercise {
         switch (option){
             case 'E' :
                 for(int i = secondNumber; i >= firstNumber; i--){
+                    // imprime os números divisíveis por 2 (pares)
                     if(i % 2 == 0){
                         System.out.println(i);
                     }
@@ -23,6 +32,7 @@ public class ThirdExercise {
                 break;
             case 'O' : 
                 for(int i = secondNumber; i >= firstNumber; i--){
+                    // imprime os números não divisíveis por 2 (ímpares)
                     if(i % 2 != 0){
                         System.out.println(i);
                     }
